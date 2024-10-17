@@ -15,10 +15,13 @@ int main() {
 	    vector<int> s1, s2;
 	    for (int i = 0; i < n; i++) cin >> arr[i];
 	    sort(arr.begin(), arr.end());
-	    long long result = 0;
-	    result += (long long)arr[n - 1] + arr[k - 1] + arr[n - 2];
-	    if (k <= 1) result += (long long)arr[n - 1];
-	    else result += (long long)arr[0];
+	    int result = 0;
+	    
+	    result += arr[n - 1] + arr[n - 2];
+	    if (k <= 1) result += arr[n - 1] + arr[k - 1];
+	    else result += arr[0] + arr[n - k - 1];
+	    
 	    cout << result << endl;
 	}
 }
+
