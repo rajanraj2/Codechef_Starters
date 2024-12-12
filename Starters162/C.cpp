@@ -1,5 +1,5 @@
 // https://www.codechef.com/problems/PERMMODK
-// Permutation mod k
+// Permutation mod k 
 
 
 #include <bits/stdc++.h>
